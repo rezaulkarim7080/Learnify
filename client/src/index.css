@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  color: #b6b6b6;
+  background-color: #181717;
+  opacity: 1;
+  background-image: radial-gradient(#c1c1c1 1.25px, #131313 1.25px);
+  background-size: 25px 25px;
+}
+
+.navDark {
+  @apply bg-slate-950 text-slate-300;
+}
+
+.btn {
+  @apply px-4 py-2 my-2 bg-[#00b58b] text-white rounded-md text-lg;
+}
+.menu-btn {
+  @apply px-10 py-5  bg-[#00b58b] text-white border-[2px] rounded-md text-lg;
+}
+.menu-btn:hover {
+  @apply px-10 py-5  bg-[#ffffff] text-[#00b58b] rounded-md border-[2px] border-[#00b58b] text-lg;
+}
+.glassyEffect {
+  @apply bg-gray-200 bottom-2 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-300;
+}
+/* .glassyEffect {
+  @apply z-10 bg-gray-200 bottom-2 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-300;
+} */
+
+.heading {
+  @apply text-xl font-bold text-[#00b58b] text-center py-2 pt-10;
+}
+.subHeading {
+  @apply text-3xl font-bold text-center pb-10;
+}
