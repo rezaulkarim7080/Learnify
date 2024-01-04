@@ -33,10 +33,13 @@ const Login = ({ darkMode }) => {
       } else if (password.length < 3)
         setError("password need minimum 3 character");
       else {
-        const res = await axios.post("http://localhost:5000/api/login", {
-          email,
-          password,
-        });
+        const res = await axios.post(
+          "https://learnify-api.vercel.app/api/login",
+          {
+            email,
+            password,
+          }
+        );
         if (res && res.data.success) {
           toast.success(res.data && res.data.message);
           setAuth({

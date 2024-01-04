@@ -34,12 +34,15 @@ const Register = ({ darkMode }) => {
       } else if (password.length < 3)
         setError("password need minimum 3 character");
       else {
-        const res = await axios.post("http://localhost:5000/api/register", {
-          name,
-          email,
-          password,
-          userImage,
-        });
+        const res = await axios.post(
+          "https://learnify-api.vercel.app/api/register",
+          {
+            name,
+            email,
+            password,
+            userImage,
+          }
+        );
 
         if (res && res.data.success) {
           navigate("/login");
