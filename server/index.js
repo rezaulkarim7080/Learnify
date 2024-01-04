@@ -15,8 +15,8 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-    // origin: 'https://oasis-dental.vercel.app',
-    origin: 'http://localhost:3000',
+    origin: 'https://learnify-flax.vercel.app',
+    // origin: 'http://localhost:3000',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
