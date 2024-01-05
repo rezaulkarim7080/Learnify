@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=ci28lX1eUag
 ## Features
 
 - Firebase Authentication with email password, Google account, and GitHub account.Users can either register with name,image, email and password and login or the user can also join with his Gmail account.
-
+- Dark and white theme
 - Users can download the details page by clicking on the download button. Users would get a pdf by clicking on the download button which is implemented using react-to-pdf package.
 
 - There is a Purchase button that would take the user to the cart route which is also a dynamic route.
